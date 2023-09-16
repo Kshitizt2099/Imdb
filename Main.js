@@ -13,7 +13,7 @@ function first(data)
     
     let Moviedata=[]
     Moviedata=data.Search;
-    //inst.style.visibility="hidden";
+    
     inst.hidden=true
     const moviecontainer=document.getElementById("Movies")
     let c="";
@@ -46,7 +46,7 @@ function first(data)
     btns.forEach((element)=>{element.addEventListener('click',()=>{localStorage.setItem("CurrentMovie",element.id); Movie();})})
 
     const favs=document.querySelectorAll(".Favbtns")
-    favs.forEach((ele)=>{ele.addEventListener('click',()=>{fid=ele.id.slice(0,-3); console.log(searchlist); searchlist.forEach((i)=>{if(i.imdbID==fid){favlist.push(i)}}); console.log(favlist);localStorage.setItem("favlist",JSON.stringify(favlist));   })})
+    favs.forEach((ele)=>{ele.addEventListener('click',()=>{fid=ele.id.slice(0,-3);  console.log(searchlist); searchlist.forEach((i)=>{if(i.imdbID==fid){favlist.push(i)}}); alert(`${favlist[favlist.length-1].Title} has been added to favorites`);localStorage.setItem("favlist",JSON.stringify(favlist));   })})
   //searchlist.forEach((i)=>{if(i.imdbID==fid){favlist.push(i)}}); console.log(favlist);localStorage.setItem("Favlist",JSON.string(favlist));  
 
     
