@@ -7,7 +7,12 @@ let favlist=[]
 let searchlist=[]
 const favbtn=document.getElementById('Favbtn')
 const inst=document.getElementById("Notice_container")
-console.log(inst)
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+searchdata.addEventListener('input',search)//Calling search function on just typing in input field
+searchbtn.addEventListener('click',search)//Calling search function on just Clicking on Search btn
+favbtn.addEventListener('click',renderfavlist)//Calling renderfavlist function on just  Clicking onFav btn.
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Used to display the data from list on the screen
 function first(data)
 {
     
@@ -51,7 +56,7 @@ function first(data)
 
     
 }
-
+//Search Functionality technically the first step
 async function search()
 {
  
@@ -71,6 +76,8 @@ async function search()
   
 
 }
+
+//Favlist functionality
 function renderfavlist()
 {
 let list=localStorage.getItem("favlist");
@@ -161,9 +168,6 @@ async function Movie()
     
   
 }
-searchdata.addEventListener('input',search)
-searchbtn.addEventListener('click',search)
-favbtn.addEventListener('click',renderfavlist)
 
 
 
