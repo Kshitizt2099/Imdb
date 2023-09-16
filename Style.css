@@ -1,0 +1,128 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    background-color: white;
+    width: 300px;
+    height: 450px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border: 3px solid white;
+    margin: 30px;
+    position: relative;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    scale: 1.1;
+    border: 3px solid #0072ce;
+    border-radius: 5px;
+  }
+  
+.imgcard{
+   display: flex;
+  
+   justify-content: center;
+  
+}
+
+  .container {
+    padding: 2px 16px;
+  }
+  .Cont{
+    display: flex;
+    align-items: center;
+    margin:20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+  .Movies{
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer{
+   
+    height: auto;
+    width: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 10px;
+    left: 45%;
+    justify-content: space-around;
+    
+    
+  }
+  .Favbtns:hover{
+    cursor: pointer;
+    scale: 1.5;
+
+  }
+  .Btns:hover{
+    cursor: pointer;
+    scale: 1.5;
+  }
+  .FavCont{
+    display: flex;
+    align-items: center;
+    margin:20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+  .Navbar{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:white;
+    padding: 10px;
+  }
+  body{
+    margin: 0%;
+    background: url("https://wallpapercave.com/wp/wp10615935.jpg");
+  }
+  .Search{
+    width:480px;
+    height: 30px;
+    border: 10px white;
+    border-radius:15px;
+    border: 1px black solid;
+  }
+  .input{
+    position: relative;
+    display: flex;
+  }
+  .searchbtncont {
+   
+    position:absolute;
+    top:5px;
+    right:5px;
+    cursor: pointer;
+  }
+  #notice{
+    color: gray;
+  }
+  .Notice_container{
+   
+    height: 50vh;
+    width: 50vw;
+    border:white 1px solid;
+    border-radius: 30px;
+    background-color:white;
+    margin-left: 25%;
+    margin-top: 10%;
+    text-align: center;
+    padding-top:100px;
+  }
+  .Favnav{
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+    border: 5px solid white;
+    }
